@@ -10,4 +10,4 @@
 
 
 ## [1.0][Unreleased]
--Base version
+- Base version
