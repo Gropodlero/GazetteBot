@@ -1,0 +1,2 @@
+# GazetteBot
+automated gazette
