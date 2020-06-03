@@ -1,10 +1,11 @@
-var version = "2.0"
+var version = "2.1"
 var author = 'arnaud.davout@gmail.com'
 var github = "https://github.com/Gropodlero/GazetteBot"
 var changelog = "https://github.com/Gropodlero/GazetteBot/blob/master/CHANGELOG.md"
+var readme = "https://github.com/Gropodlero/GazetteBot/blob/master/README.md"
 var reply_to = 'do-not-reply@gazettebot.com'
 var label_name = "Gazette"
-var signature = '<br><br><br>---<br>GazetteBot v' + version + ' | <a href=' + changelog + '>Changelog</a> | <a href=' + github + '>GitHub</a> | <a href=mailto:' + author + '>Contact</a>';
+var signature = '<br><br><br>---<br>GazetteBot v' + version + ' | <a href=' + readme + '>Read Me</a> | <a href=' + changelog + '>Changelog</a> | <a href=' + github + '>GitHub</a> | <a href=mailto:' + author + '>Contact</a>';
 
 function JiMoins(day) 
 {
@@ -45,7 +46,7 @@ function SendRappel(adresses, subject, body)
    {
      if (adresseOK.indexOf(adresses[i].toString()) == -1)
      {
-        // GmailApp.sendEmail(adresses[i], subject, "",{htmlBody:body, replyTo:reply_to});
+        GmailApp.sendEmail(adresses[i], subject, "",{htmlBody:body, replyTo:reply_to});
         Logger.log('SendRappel to '+ adresses[i] + ' index ' + i);
      }
    }
