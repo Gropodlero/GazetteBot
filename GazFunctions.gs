@@ -43,10 +43,10 @@ function SendRappel(adresses, subject, body)
    }
    for(var i = 0;i<adresses.length;i++)
    {
-     if (adresseOK.indexOf(adresses[i]) == -1)
+     if (adresseOK.indexOf(adresses[i].toString()) == -1)
      {
-        GmailApp.sendEmail(adresses[i], subject, "",{htmlBody:body, replyTo:reply_to});
-        Logger.log('SendRappel to '+ adresses[i] +'subject : '+subject+'\n'+body);
+        // GmailApp.sendEmail(adresses[i], subject, "",{htmlBody:body, replyTo:reply_to});
+        Logger.log('SendRappel to '+ adresses[i] + ' index ' + i);
      }
    }
 }
