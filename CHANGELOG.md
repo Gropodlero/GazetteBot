@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.1] - -03-06-2020
+
+- Ajout du Readme
+- Correction issue #1 : probleme dans l'envoi des rappels
+
+
 ## [2.0] - -06-05-2020
 
 - Mise sous github
